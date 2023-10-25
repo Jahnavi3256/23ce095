@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+/* Here the program takes the length of pendulum as an input and
+   finds the time period of ossiclations in sec through formula
+   T=2*pi*Sqrt(L/G) using basic mathematical operaters.      */
+float pi= 3.14;
+float Length,Time,G=9.8;
+clrscr();
+printf("Enter the Length of the Pendulum\n");
+scanf("%f",&Length);
+Time=2*pi*(sqrt(Length/G));
+printf("The Calculated Time Period of Pendulum : %.2fsec\n",Time);
+getch();
+return 0;
+// program written by Jahnavi Patel
+//                 ID-23TCEPCD
+}

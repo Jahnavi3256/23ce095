@@ -1,0 +1,37 @@
+#include<stdio.h>
+int main()
+{
+/* This program simply takes the Basic Salary of user 
+   and finds DA,HRA,MA,TA,Deduction,Allowances,Net 
+   Salary and Gross Salary for that usingbasic 
+   mathematical operaters.         */
+long int BasSal;
+float DA,HRA,MA,TA,PF,Allowances,GrossSal;
+float NetSal,Deduction,IT=500;
+clrscr();
+printf("Enter your Basic Salary: \n");
+scanf("%ld",&BasSal);
+DA=0.7*BasSal;
+HRA=0.07*BasSal;
+MA=0.02*BasSal;
+TA=0.04*BasSal;
+printf("        ALLOWANCES  \n");
+printf("DA of Basic Salary is : %.2f\n",DA);
+printf("HRA of Basic Salary is : %.2f\n",HRA);
+printf("MA of Basic Salary is : %.2f\n",MA);
+printf("TA of Basic Salary is : %.2f\n",TA);
+printf("        DEDUCTION \n");
+PF=0.12*BasSal;
+printf("PF of Basic Salary : %.2f\n",PF);
+Allowances=DA+HRA+MA+TA;
+Deduction=PF+IT;
+GrossSal=BasSal+Allowances;
+NetSal=GrossSal-Deduction;
+printf("Gross Salary : %.2f\n",GrossSal);
+printf("Net Salary : %.2f\n",NetSal);
+// program written by Jahnavi Patel
+//                 ID-23TCEPCD
+
+getch();
+return 0;
+}

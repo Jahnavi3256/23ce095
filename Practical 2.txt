@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+/* this program uses simple mathematical functions like multiplication,
+	division,subtraction and addition to find the number of Men and
+	Women in a Town and also find the number of literate People in
+	that town using the given information         */
+long int TotPopl=80000;
+long float TotMen=0.52*TotPopl;
+long float TotLit=0.48*TotPopl;
+long float LitMen=0.35*TotPopl;
+long float LitWomen=TotLit-LitMen;
+long float TotWomen=TotPopl-TotMen;
+clrscr();
+printf("Total Population : %ld\n",TotPopl);
+printf("Number of Literate Men and Women :%.2lf\n",TotLit);
+printf("Number of a Men : %.2lf\n",TotMen);
+printf("Number of Literate Men : %.2lf\n",LitMen);
+printf("Number if Illiterate Men : %.2lf\n",TotMen-LitMen);
+printf("Number of Women : %.2lf\n",TotPopl-TotMen);
+printf("Number of Literate Women : %.2lf\n",TotLit-LitMen);
+printf("Number of Illiterate Women : %.2lf\n",TotWomen-LitWomen);
+getch();
+return 0;
+// program written by Jahnavi Patel
+//                 ID-23TCEPCD
+}

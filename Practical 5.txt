@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+/* This is the program useful to understand
+   the operation of increment and decrement
+   operaters by two different types of problems.
+   For program 'a'we go right to left to find the answer.
+   for the prigram 'b' we use putpost method to find the answer.   */
+
+int Y=10;
+int c,P=20;
+clrscr();
+printf("\na part of the program\n");
+printf("%d %d %d %d\n",++Y,--Y,Y++,Y--);
+printf("b part of the program\n");
+// from here the b part of program starts.
+Y=10;
+printf("Answer of the Equation : %d\nNumber of Yellow Balls Before Execution: %d \nNumber of Pink Balls Before Execution: %d\n",++Y + Y++ + --Y + ++P - --P - --P,Y,P);
+printf("Number of Yellow Balls After Execution%d\nNumber of Pink Balls After Execution %d", Y,P);
+getch();
+return 0;
+// program written by Jahnavi Patel
+//                 ID-23TCEPCD
+}
